@@ -1,18 +1,20 @@
 # Module soft-robotics 
 
-Provide a description of the purpose of the module and any relevant information.
+Soft Robotics is an industry-leading technology company that designs and builds automated AI-enabled solutions for inspection and robot picking applications using 3D machine vision, artificial intelligence and soft grippers.
 
 ## Model brad-grigsby:soft-robotics:coDrive
 
-Provide a description of the model and any relevant information.
+Gripper module to control the soft robotics coDrive vacuum controller.
 
 ### Configuration
 The following attribute template can be used to configure this model:
 
 ```json
 {
-"attribute_1": <float>,
-"attribute_2": <string>
+"d1_pin": <string>,
+"d2_pin": <string>,
+"d3_pin": <string>,
+"board_name": <string>
 }
 ```
 
@@ -22,29 +24,18 @@ The following attributes are available for this model:
 
 | Name          | Type   | Inclusion | Description                |
 |---------------|--------|-----------|----------------------------|
-| `attribute_1` | float  | Required  | Description of attribute 1 |
-| `attribute_2` | string | Optional  | Description of attribute 2 |
+| `d1_pin` | string  | Required  | Pin of D1 from coDrive |
+| `d2_pin` | string | Required  | Pin of D2 from coDrive |
+| `d3_pin` | string | Required | Pin of D3 from coDrive |
+| `board_name` | string | Required | Name of board for GPIO connections |
 
 #### Example Configuration
 
 ```json
 {
-  "attribute_1": 1.0,
-  "attribute_2": "foo"
-}
-```
-
-### DoCommand
-
-If your model implements DoCommand, provide an example payload of each command that is supported and the arguments that can be used. If your model does not implement DoCommand, remove this section.
-
-#### Example DoCommand
-
-```json
-{
-  "command_name": {
-    "arg1": "foo",
-    "arg2": 1
-  }
+  "d1_pin": "16",
+  "d2_pin": "18",
+  "d3_pin": "11",
+  "board_name": "pi5"
 }
 ```

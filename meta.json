@@ -2,13 +2,13 @@
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "brad-grigsby:soft-robotics",
   "visibility": "public",
-  "url": "",
+  "url": "https://github.com/bgrigsby8/soft-robotics",
   "description": "Modular gripper component: coDrive",
   "models": [
     {
       "api": "rdk:component:gripper",
       "model": "brad-grigsby:soft-robotics:coDrive",
-      "short_description": "Provide a short (100 characters or less) description of this model here",
+      "short_description": "Gripper module to control the soft robotics coDrive vacuum controller.",
       "markdown_link": "README.md#model-brad-grigsbysoft-roboticscodrive"
     }
   ],
